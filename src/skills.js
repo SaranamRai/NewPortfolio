@@ -4,7 +4,18 @@ import "./skills.css";
 function Skills() {
   return (
     <div className="skills-page">
+{/* ===== STICKY NAVBAR ===== */}
+      <header className="navbar">
+        <div className="nav-container">
+          <span className="logo">Portfolio</span>
+ </div>
+ <header className="smallnav">
+        <div className="smallnav-container">
+          
+ </div>
+ </header>
 
+      </header>
       {/* HERO STYLE HEADER */}
       <section className="skills-hero">
         <div className="skills-container">
@@ -40,6 +51,14 @@ function Skills() {
 
         </div>
       </section>
+
+<section className="heros">
+        
+        <div className="hero-last">
+         
+        </div>
+      </section>
+
 
     </div>
   );

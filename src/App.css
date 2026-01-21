@@ -14,6 +14,68 @@ body {
   width: 100%;
 }
 
+/* =======================
+   STICKY NAVBAR
+======================= */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: linear-gradient(  135deg,
+    #a93a5d,
+    #9c7c1a);
+  box-shadow: 0 6px 18px rgba(14, 11, 11, 0.25);
+}
+
+.nav-container {
+  max-width: 1200px;
+  padding: 14px 6%;
+  display: flex;
+  align-items:center;
+   justify-content: flex-start; 
+  
+}
+
+.logo {
+  font-size: 22px;
+  color: #6fffe9;
+  font-weight: 600;
+  
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #e0f7fa;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #6fffe9;
+}
+
+.smallnav{
+position: sticky;
+  top: 0;
+  z-index: 10;
+  background:black;
+  box-shadow: 0 6px 18px rgba(14, 11, 11, 0.25);
+}
+
+.smallnav-container {
+  max-width: 1px;
+  padding: 3px 6%;
+  display: flex;
+  align-items:center;
+   justify-content: flex-start; 
+  
+}
+
 /* HERO */
 .hero {
   min-height: 50vh;
@@ -25,7 +87,7 @@ body {
   .hero-container {
   
   display: flex;
-  width: 60%;
+  width: 70%;
   justify-content: space-between;
   gap:40px;
 }
@@ -158,15 +220,15 @@ body {
 
 /* ABOUT SECTION */
 .about-section {
-  background: #fbf8fa;
-  padding: 40px 6%;
+  background: #eaf6ff;
+  padding: 50px 6%;
   display: flex;
   justify-content: center;
 }
 
 .about-card {
   background: white;
-  max-width: 900px;
+  max-width: 1050px;
   width: 100%;
   padding: 40px 50px;
   border-radius: 18px;
@@ -186,13 +248,22 @@ body {
 }
 
 .heros {
-  min-height: 10vh;
+  min-height: 120vh;
   background: linear-gradient(135deg, #c44569, #b8a41f);
   display: flex;
   justify-content: center;
-  padding: 30px 8%;}
+  padding: 10px 6%;
+z-index: 1000;
+}
 
 
   .hero-last{
     position: center;;
   }
+
+  .about-list {
+  background: #f8fafc;
+  padding: 14px 18px;
+  border-radius: 8px;
+  font-size: 15px;
+  color: #1f2933;}

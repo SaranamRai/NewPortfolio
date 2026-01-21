@@ -1,11 +1,23 @@
 import { Link } from "react-router-dom";
-import "./skills.css";
+import "./skills.css"; // reuse same design (OK)
 
-function Skills() {
+function Hobbies() {
   return (
+    
     <div className="skills-page">
+{/* ===== STICKY NAVBAR ===== */}
+      <header className="navbar">
+        <div className="nav-container">
+          <span className="logo">Portfolio</span>
+ </div>
+ <header className="smallnav">
+        <div className="smallnav-container">
+          
+ </div>
+ </header>
+      </header>
 
-      {/* HERO STYLE HEADER */}
+      {/* HERO HEADER */}
       <section className="skills-hero">
         <div className="skills-container">
 
@@ -21,7 +33,7 @@ function Skills() {
         </div>
       </section>
 
-      {/* SKILLS CARD SECTION */}
+      {/* HOBBIES CARD SECTION */}
       <section className="skills-section">
         <div className="skills-card">
 
@@ -29,13 +41,19 @@ function Skills() {
             <span>Drawing</span>
             <span>Cycling</span>
             <span>Travelling</span>
-            <span>Eating</span>
             <span>Playing Guitar</span>
-            <span>Listening Music</span>
+            <span>Listening to Music</span>
             <span>Mobile Gaming</span>
-            <span>Driving Car</span>
+            <span>Driving</span>
+            <span>Exploring Technology</span>
           </div>
 
+        </div>
+      </section>
+<section className="heros">
+        
+        <div className="hero-last">
+         
         </div>
       </section>
 
@@ -43,3 +61,4 @@ function Skills() {
   );
 }
 
+export default Hobbies;

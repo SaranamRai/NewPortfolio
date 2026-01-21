@@ -4,6 +4,65 @@
   font-family: "Segoe UI", sans-serif;
 }
 
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: linear-gradient(  135deg,
+    #a93a5d,
+    #9c7c1a);
+  box-shadow: 0 6px 18px rgba(14, 11, 11, 0.25);
+}
+
+.nav-container {
+  max-width: 1200px;
+  padding: 14px 6%;
+  display: flex;
+  align-items:center;
+   justify-content: flex-start; 
+  
+}
+
+.logo {
+  font-size: 22px;
+  color: #6fffe9;
+  font-weight: 600;
+  
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #e0f7fa;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #6fffe9;
+}
+
+.smallnav{
+position: sticky;
+  top: 0;
+  z-index: 10;
+  background:black;
+  box-shadow: 0 6px 18px rgba(14, 11, 11, 0.25);
+}
+
+.smallnav-container {
+  max-width: 1px;
+  padding: 3px 6%;
+  display: flex;
+  align-items:center;
+   justify-content: flex-start; 
+  
+}
+
 /* HERO MATCHING HOME */
 .hobbies-hero {
   min-height: 40vh;
@@ -63,6 +122,18 @@
   font-weight: 500;
 }
 
+.heros {
+  min-height: 10vh;
+  background: linear-gradient(135deg, #c44569, #b8a41f);
+  display: flex;
+  justify-content: center;
+  padding: 30px 8%;}
+
+
+  .hero-last{
+    position: center;;
+  }
+  
 /* RESPONSIVE */
 @media (max-width: 700px) {
   .hobbies-text h1 {
